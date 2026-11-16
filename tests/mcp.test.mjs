@@ -16,7 +16,15 @@ async function conferir(transporte) {
     assert.deepEqual(tools.map(t => t.name).sort(), ['buscar_filmes', 'comparar_filmes', 'listar_filtros', 'obter_detalhes_filme', 'planejar_sessao', 'resumir_catalogo', 'sugerir_alternativas']);
     assert.ok(tools.every(t => t.annotations.readOnlyHint));
     const lista = await cliente.callTool({ name: 'listar_filtros', arguments: {} });
-    assert.equal(lista.structuredContent.total, 60);
+    assert.equal(lista.structuredContent.total, 160);
+    const real = await cliente.callTool({ name: 'buscar_filmes', arguments: { catalogo: 'reais', ator: 'DiCaprio', titulo: 'Inception' } });
+    assert.equal(real.structuredContent.total, 1);
+    assert.equal(real.structuredContent.filmes[0].id, 'REAL-Q25188');
+    const ficha = await cliente.callTool({ name: 'obter_detalhes_filme', arguments: { id: 'REAL-Q25188' } });
+    assert.equal(ficha.structuredContent.filme.fonte.nome, 'Wikidata');
+    assert.ok(ficha.structuredContent.filme.elenco.length > 0);
+    const semClassificacao = await cliente.callTool({ name: 'buscar_filmes', arguments: { catalogo: 'reais', idade_publico: 10 } });
+    assert.equal(semClassificacao.structuredContent.total, 0);
     const args = { genero: 'comédia', duracao_maxima: 110 };
     const r = await cliente.callTool({ name: 'buscar_filmes', arguments: args });
     assert.deepEqual(r.structuredContent, consultas.buscar(args));
@@ -30,7 +38,7 @@ async function conferir(transporte) {
     assert.ok(sessao.structuredContent.sessoes.length > 0);
     assert.ok(sessao.structuredContent.sessoes.every(s => s.duracao_total <= 180));
     const resumo = await cliente.callTool({ name: 'resumir_catalogo', arguments: {} });
-    assert.equal(resumo.structuredContent.total, 60);
+    assert.equal(resumo.structuredContent.total, 160);
     const alternativas = await cliente.callTool({ name: 'sugerir_alternativas', arguments: { filtros: { genero: 'comédia', duracao_maxima: 70, idade_publico: 0 } } });
     assert.ok(alternativas.structuredContent.alternativas.length > 0);
     let intervaloRecusado = false;
@@ -55,7 +63,7 @@ test('MCP real HTTP e verificações de saúde, origem, host e tamanho', { timeo
     const saude = await fetch(`${base}/health`);
     assert.equal(saude.status, 200);
     assert.equal(saude.headers.get('cache-control'), 'no-store');
-    assert.equal((await saude.json()).total_filmes, 60);
+    assert.equal((await saude.json()).total_filmes, 160);
     assert.equal((await fetch(`${base}/nao-existe`)).status, 404);
     assert.equal((await fetch(servico.url, { headers: { Origin: 'https://invasor.example' } })).status, 403);
     const hostInvalido = await new Promise((resolve, reject) => {

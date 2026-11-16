@@ -1,0 +1,502 @@
+[
+  {
+    "titulo_enwiki": "Inception",
+    "wikidata_id": "Q25188",
+    "imdb_id": "tt1375666"
+  },
+  {
+    "titulo_enwiki": "The Matrix",
+    "wikidata_id": "Q83495",
+    "imdb_id": "tt0133093"
+  },
+  {
+    "titulo_enwiki": "Interstellar (film)",
+    "wikidata_id": "Q13417189",
+    "imdb_id": "tt0816692"
+  },
+  {
+    "titulo_enwiki": "The Dark Knight",
+    "wikidata_id": "Q163872",
+    "imdb_id": "tt0468569"
+  },
+  {
+    "titulo_enwiki": "Batman Begins",
+    "wikidata_id": "Q166262",
+    "imdb_id": "tt0372784"
+  },
+  {
+    "titulo_enwiki": "The Dark Knight Rises",
+    "wikidata_id": "Q189330",
+    "imdb_id": "tt1345836"
+  },
+  {
+    "titulo_enwiki": "The Prestige",
+    "wikidata_id": "Q46551",
+    "imdb_id": "tt0482571"
+  },
+  {
+    "titulo_enwiki": "Memento (film)",
+    "wikidata_id": "Q190525",
+    "imdb_id": "tt0209144"
+  },
+  {
+    "titulo_enwiki": "Dunkirk (2017 film)",
+    "wikidata_id": "Q21935651",
+    "imdb_id": "tt5013056"
+  },
+  {
+    "titulo_enwiki": "Oppenheimer (film)",
+    "wikidata_id": "Q108839994",
+    "imdb_id": "tt15398776"
+  },
+  {
+    "titulo_enwiki": "The Shawshank Redemption",
+    "wikidata_id": "Q172241",
+    "imdb_id": "tt0111161"
+  },
+  {
+    "titulo_enwiki": "The Godfather",
+    "wikidata_id": "Q47703",
+    "imdb_id": "tt0068646"
+  },
+  {
+    "titulo_enwiki": "The Godfather Part II",
+    "wikidata_id": "Q184768",
+    "imdb_id": "tt0071562"
+  },
+  {
+    "titulo_enwiki": "Pulp Fiction",
+    "wikidata_id": "Q104123",
+    "imdb_id": "tt0110912"
+  },
+  {
+    "titulo_enwiki": "Forrest Gump",
+    "wikidata_id": "Q134773",
+    "imdb_id": "tt0109830"
+  },
+  {
+    "titulo_enwiki": "Fight Club",
+    "wikidata_id": "Q190050",
+    "imdb_id": "tt0137523"
+  },
+  {
+    "titulo_enwiki": "The Green Mile (film)",
+    "wikidata_id": "Q208263",
+    "imdb_id": "tt0120689"
+  },
+  {
+    "titulo_enwiki": "The Truman Show",
+    "wikidata_id": "Q214801",
+    "imdb_id": "tt0120382"
+  },
+  {
+    "titulo_enwiki": "The Sixth Sense",
+    "wikidata_id": "Q183063",
+    "imdb_id": "tt0167404"
+  },
+  {
+    "titulo_enwiki": "Seven (1995 film)",
+    "wikidata_id": "Q190908",
+    "imdb_id": "tt0114369"
+  },
+  {
+    "titulo_enwiki": "The Silence of the Lambs (film)",
+    "wikidata_id": "Q133654",
+    "imdb_id": "tt0102926"
+  },
+  {
+    "titulo_enwiki": "Goodfellas",
+    "wikidata_id": "Q42047",
+    "imdb_id": "tt0099685"
+  },
+  {
+    "titulo_enwiki": "The Departed",
+    "wikidata_id": "Q172975",
+    "imdb_id": "tt0407887"
+  },
+  {
+    "titulo_enwiki": "Shutter Island (film)",
+    "wikidata_id": "Q210364",
+    "imdb_id": "tt1130884"
+  },
+  {
+    "titulo_enwiki": "Catch Me If You Can",
+    "wikidata_id": "Q208108",
+    "imdb_id": "tt0264464"
+  },
+  {
+    "titulo_enwiki": "Saving Private Ryan",
+    "wikidata_id": "Q165817",
+    "imdb_id": "tt0120815"
+  },
+  {
+    "titulo_enwiki": "Schindler's List",
+    "wikidata_id": "Q483941",
+    "imdb_id": "tt0108052"
+  },
+  {
+    "titulo_enwiki": "Jurassic Park",
+    "wikidata_id": "Q167726",
+    "imdb_id": "tt0107290"
+  },
+  {
+    "titulo_enwiki": "Jaws (film)",
+    "wikidata_id": "Q189505",
+    "imdb_id": "tt0073195"
+  },
+  {
+    "titulo_enwiki": "E.T. the Extra-Terrestrial",
+    "wikidata_id": "Q11621",
+    "imdb_id": "tt0083866"
+  },
+  {
+    "titulo_enwiki": "Back to the Future",
+    "wikidata_id": "Q91540",
+    "imdb_id": "tt0088763"
+  },
+  {
+    "titulo_enwiki": "Back to the Future Part II",
+    "wikidata_id": "Q109331",
+    "imdb_id": "tt0096874"
+  },
+  {
+    "titulo_enwiki": "Raiders of the Lost Ark",
+    "wikidata_id": "Q174284",
+    "imdb_id": "tt0082971"
+  },
+  {
+    "titulo_enwiki": "Star Wars (film)",
+    "wikidata_id": "Q17738",
+    "imdb_id": "tt0076759"
+  },
+  {
+    "titulo_enwiki": "The Empire Strikes Back",
+    "wikidata_id": "Q181795",
+    "imdb_id": "tt0080684"
+  },
+  {
+    "titulo_enwiki": "Return of the Jedi",
+    "wikidata_id": "Q181803",
+    "imdb_id": "tt0086190"
+  },
+  {
+    "titulo_enwiki": "The Lord of the Rings: The Fellowship of the Ring",
+    "wikidata_id": "Q127367",
+    "imdb_id": "tt0120737"
+  },
+  {
+    "titulo_enwiki": "The Lord of the Rings: The Two Towers",
+    "wikidata_id": "Q164963",
+    "imdb_id": "tt0167261"
+  },
+  {
+    "titulo_enwiki": "The Lord of the Rings: The Return of the King",
+    "wikidata_id": "Q131074",
+    "imdb_id": "tt0167260"
+  },
+  {
+    "titulo_enwiki": "Harry Potter and the Philosopher's Stone (film)",
+    "wikidata_id": "Q102438",
+    "imdb_id": "tt0241527"
+  },
+  {
+    "titulo_enwiki": "Harry Potter and the Prisoner of Azkaban (film)",
+    "wikidata_id": "Q102448",
+    "imdb_id": "tt0304141"
+  },
+  {
+    "titulo_enwiki": "Titanic (1997 film)",
+    "wikidata_id": "Q44578",
+    "imdb_id": "tt0120338"
+  },
+  {
+    "titulo_enwiki": "Avatar (2009 film)",
+    "wikidata_id": "Q24871",
+    "imdb_id": "tt0499549"
+  },
+  {
+    "titulo_enwiki": "The Terminator",
+    "wikidata_id": "Q162255",
+    "imdb_id": "tt0088247"
+  },
+  {
+    "titulo_enwiki": "Terminator 2: Judgment Day",
+    "wikidata_id": "Q170564",
+    "imdb_id": "tt0103064"
+  },
+  {
+    "titulo_enwiki": "Alien (film)",
+    "wikidata_id": "Q103569",
+    "imdb_id": "tt0078748"
+  },
+  {
+    "titulo_enwiki": "Aliens (film)",
+    "wikidata_id": "Q104814",
+    "imdb_id": "tt0090605"
+  },
+  {
+    "titulo_enwiki": "Blade Runner",
+    "wikidata_id": "Q184843",
+    "imdb_id": "tt0083658"
+  },
+  {
+    "titulo_enwiki": "Blade Runner 2049",
+    "wikidata_id": "Q21500755",
+    "imdb_id": "tt1856101"
+  },
+  {
+    "titulo_enwiki": "Arrival (film)",
+    "wikidata_id": "Q20382729",
+    "imdb_id": "tt2543164"
+  },
+  {
+    "titulo_enwiki": "The Martian (film)",
+    "wikidata_id": "Q18547944",
+    "imdb_id": "tt3659388"
+  },
+  {
+    "titulo_enwiki": "Gravity (2013 film)",
+    "wikidata_id": "Q2579784",
+    "imdb_id": "tt1454468"
+  },
+  {
+    "titulo_enwiki": "2001: A Space Odyssey",
+    "wikidata_id": "Q103474",
+    "imdb_id": "tt0062622"
+  },
+  {
+    "titulo_enwiki": "WALL-E",
+    "wikidata_id": "Q104905",
+    "imdb_id": "tt0910970"
+  },
+  {
+    "titulo_enwiki": "Toy Story",
+    "wikidata_id": "Q171048",
+    "imdb_id": "tt0114709"
+  },
+  {
+    "titulo_enwiki": "Toy Story 2",
+    "wikidata_id": "Q187266",
+    "imdb_id": "tt0120363"
+  },
+  {
+    "titulo_enwiki": "Toy Story 3",
+    "wikidata_id": "Q187278",
+    "imdb_id": "tt0435761"
+  },
+  {
+    "titulo_enwiki": "Finding Nemo",
+    "wikidata_id": "Q132863",
+    "imdb_id": "tt0266543"
+  },
+  {
+    "titulo_enwiki": "The Incredibles",
+    "wikidata_id": "Q213326",
+    "imdb_id": "tt0317705"
+  },
+  {
+    "titulo_enwiki": "Ratatouille (film)",
+    "wikidata_id": "Q170035",
+    "imdb_id": "tt0382932"
+  },
+  {
+    "titulo_enwiki": "Up (2009 film)",
+    "wikidata_id": "Q174811",
+    "imdb_id": "tt1049413"
+  },
+  {
+    "titulo_enwiki": "Inside Out",
+    "wikidata_id": "Q6144664",
+    "imdb_id": "tt2096673"
+  },
+  {
+    "titulo_enwiki": "Coco (2017 film)",
+    "wikidata_id": "Q5815826",
+    "imdb_id": "tt2380307"
+  },
+  {
+    "titulo_enwiki": "Soul (2020 film)",
+    "wikidata_id": "Q64744044",
+    "imdb_id": "tt2948372"
+  },
+  {
+    "titulo_enwiki": "Monsters, Inc.",
+    "wikidata_id": "Q187726",
+    "imdb_id": "tt0198781"
+  },
+  {
+    "titulo_enwiki": "Shrek",
+    "wikidata_id": "Q483815",
+    "imdb_id": "tt0126029"
+  },
+  {
+    "titulo_enwiki": "Shrek 2",
+    "wikidata_id": "Q485983",
+    "imdb_id": "tt0298148"
+  },
+  {
+    "titulo_enwiki": "How to Train Your Dragon (2010 film)",
+    "wikidata_id": "Q373096",
+    "imdb_id": "tt0892769"
+  },
+  {
+    "titulo_enwiki": "The Lion King",
+    "wikidata_id": "Q36479",
+    "imdb_id": "tt0110357"
+  },
+  {
+    "titulo_enwiki": "Beauty and the Beast (1991 film)",
+    "wikidata_id": "Q179673",
+    "imdb_id": "tt0101414"
+  },
+  {
+    "titulo_enwiki": "Aladdin (1992 Disney film)",
+    "wikidata_id": "Q215518",
+    "imdb_id": "tt0103639"
+  },
+  {
+    "titulo_enwiki": "Frozen (2013 film)",
+    "wikidata_id": "Q246283",
+    "imdb_id": "tt2294629"
+  },
+  {
+    "titulo_enwiki": "Zootopia",
+    "wikidata_id": "Q15270647",
+    "imdb_id": "tt2948356"
+  },
+  {
+    "titulo_enwiki": "Spirited Away",
+    "wikidata_id": "Q155653",
+    "imdb_id": "tt0245429"
+  },
+  {
+    "titulo_enwiki": "My Neighbor Totoro",
+    "wikidata_id": "Q39571",
+    "imdb_id": "tt0096283"
+  },
+  {
+    "titulo_enwiki": "Princess Mononoke",
+    "wikidata_id": "Q186572",
+    "imdb_id": "tt0119698"
+  },
+  {
+    "titulo_enwiki": "Howl's Moving Castle (film)",
+    "wikidata_id": "Q29011",
+    "imdb_id": "tt0347149"
+  },
+  {
+    "titulo_enwiki": "Grave of the Fireflies",
+    "wikidata_id": "Q274520",
+    "imdb_id": "tt0095327"
+  },
+  {
+    "titulo_enwiki": "Your Name",
+    "wikidata_id": "Q21697406",
+    "imdb_id": "tt5311514"
+  },
+  {
+    "titulo_enwiki": "Parasite (2019 film)",
+    "wikidata_id": "Q61448040",
+    "imdb_id": "tt6751668"
+  },
+  {
+    "titulo_enwiki": "Amélie",
+    "wikidata_id": "Q484048",
+    "imdb_id": "tt0211915"
+  },
+  {
+    "titulo_enwiki": "Life Is Beautiful",
+    "wikidata_id": "Q19355",
+    "imdb_id": "tt0118799"
+  },
+  {
+    "titulo_enwiki": "Cinema Paradiso",
+    "wikidata_id": "Q464032",
+    "imdb_id": "tt0095765"
+  },
+  {
+    "titulo_enwiki": "The Intouchables",
+    "wikidata_id": "Q595",
+    "imdb_id": "tt1675434"
+  },
+  {
+    "titulo_enwiki": "Pan's Labyrinth",
+    "wikidata_id": "Q216006",
+    "imdb_id": "tt0457430"
+  },
+  {
+    "titulo_enwiki": "City of God (2002 film)",
+    "wikidata_id": "Q220741",
+    "imdb_id": "tt0317248"
+  },
+  {
+    "titulo_enwiki": "Central Station (film)",
+    "wikidata_id": "Q1054036",
+    "imdb_id": "tt0140888"
+  },
+  {
+    "titulo_enwiki": "Elite Squad",
+    "wikidata_id": "Q282781",
+    "imdb_id": "tt0861739"
+  },
+  {
+    "titulo_enwiki": "A Dog's Will",
+    "wikidata_id": "Q3282983",
+    "imdb_id": "tt0271383"
+  },
+  {
+    "titulo_enwiki": "The Second Mother (2015 film)",
+    "wikidata_id": "Q18703886",
+    "imdb_id": "tt3742378"
+  },
+  {
+    "titulo_enwiki": "Bacurau",
+    "wikidata_id": "Q63246555",
+    "imdb_id": "tt2762506"
+  },
+  {
+    "titulo_enwiki": "Aquarius (film)",
+    "wikidata_id": "Q23833608",
+    "imdb_id": "tt5221584"
+  },
+  {
+    "titulo_enwiki": "Boy and the World",
+    "wikidata_id": "Q16246692",
+    "imdb_id": "tt3183630"
+  },
+  {
+    "titulo_enwiki": "The Grand Budapest Hotel",
+    "wikidata_id": "Q3521099",
+    "imdb_id": "tt2278388"
+  },
+  {
+    "titulo_enwiki": "La La Land",
+    "wikidata_id": "Q20856802",
+    "imdb_id": "tt3783958"
+  },
+  {
+    "titulo_enwiki": "Whiplash (2014 film)",
+    "wikidata_id": "Q15648198",
+    "imdb_id": "tt2582802"
+  },
+  {
+    "titulo_enwiki": "The Pianist (2002 film)",
+    "wikidata_id": "Q150804",
+    "imdb_id": "tt0253474"
+  },
+  {
+    "titulo_enwiki": "Modern Times (film)",
+    "wikidata_id": "Q45602",
+    "imdb_id": "tt0027977"
+  },
+  {
+    "titulo_enwiki": "The Kid (1921 film)",
+    "wikidata_id": "Q374172",
+    "imdb_id": "tt0012349"
+  },
+  {
+    "titulo_enwiki": "Casablanca (film)",
+    "wikidata_id": "Q132689",
+    "imdb_id": "tt0034583"
+  }
+]

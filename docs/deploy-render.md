@@ -37,7 +37,7 @@ curl --fail --max-time 90 https://SEU-SERVICO.onrender.com/health
 npm run verificar -- https://SEU-SERVICO.onrender.com/mcp
 ```
 
-Execute o segundo comando no computador, dentro da pasta do projeto. Saúde deve indicar 60 filmes. O verificador deve descobrir sete ferramentas, obter quatro comédias até 110 minutos, consultar `FILME-001` e validar comparação, sessão, estatísticas e alternativas. Guarde a revisão implantada e a data do teste. Abrir `/mcp` no navegador e receber 405 não significa que o MCP falhou: a verificação correta utiliza o protocolo.
+Execute o segundo comando no computador, dentro da pasta do projeto. Saúde deve indicar 160 filmes (100 reais e 60 fictícios), versão 2.0.0. O verificador deve descobrir sete ferramentas, obter quatro comédias fictícias até 110 minutos, consultar `FILME-001` e validar comparação, sessão, estatísticas e alternativas. Guarde a revisão implantada e a data do teste. Abrir `/mcp` no navegador e receber 405 não significa que o MCP falhou: a verificação correta utiliza o protocolo.
 
 Depois, conecte o cliente de IA e configure o cron conforme os outros guias. Não use a URL de exemplo sem substituí-la.
 
@@ -45,10 +45,14 @@ Depois, conecte o cliente de IA e configure o cron conforme os outros guias. Nã
 
 O Render documenta repouso após 15 minutos sem tráfego e aproximadamente um minuto para despertar. O workspace compartilha 750 horas gratuitas mensais entre serviços. Há limites separados de tráfego e builds. Confira o painel de uso, sobretudo se já houver outros projetos.
 
-O JSON está incluído no deploy, portanto permanece como parte da versão do código. Alterações gravadas no disco em execução não seriam persistentes no plano Free. Esta aplicação não faz essas gravações.
+O JSON dos dois catálogos está incluído no deploy, portanto permanece como parte da versão do código. Alterações gravadas no disco em execução não seriam persistentes no plano Free. Esta aplicação não faz essas gravações.
 
 O cron não garante disponibilidade e não impede reinicializações. Para a aula, confira `/health`, depois uma consulta MCP real. Mantenha o modo local preparado.
 
 ## Fontes
 
 Consultadas em 16/11/2026: [Web Services](https://render.com/docs/web-services), [Blueprint](https://render.com/docs/blueprint-spec), [variáveis automáticas](https://render.com/docs/environment-variables), [Free](https://render.com/docs/free). Planos e interface podem mudar.
+
+## Atualização da versão 2.0
+
+Os dados reais já estão versionados. Não execute o importador durante o build: use `npm ci --ignore-scripts` e `npm start`. A URL publicada é `https://cinecatalogo-mcp.onrender.com/mcp`. O `/health` continua compatível com o cron e acrescenta contagens separadas e a versão. Após o deploy, atualize a descoberta das ferramentas no cliente de IA.

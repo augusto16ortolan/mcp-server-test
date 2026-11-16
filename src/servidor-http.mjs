@@ -8,7 +8,7 @@ import { criarServidor } from './ferramentas.mjs';
 // Factory exportada permite testar em uma porta livre, sem iniciar ao importar.
 export async function iniciarHttp({ port = Number(process.env.PORT || 3000), host = '0.0.0.0',
   filmes = carregarCatalogo(), log = console.error,
-  allowedHosts = ['localhost', '127.0.0.1', '[::1]', process.env.RENDER_EXTERNAL_HOSTNAME, ...(process.env.ALLOWED_HOSTS || '').split(',')].map(s => s?.trim()).filter(Boolean),
+  allowedHosts = ['localhost', '127.0.0.1', '[::1]', process.env.RENDER_EXTERNAL_HOSTNAME, process.env.RAILWAY_PUBLIC_DOMAIN, ...(process.env.ALLOWED_HOSTS || '').split(',')].map(s => s?.trim()).filter(Boolean),
   allowedOrigins = (process.env.ALLOWED_ORIGINS || '').split(',').map(s => s.trim()).filter(Boolean)
 } = {}) {
   if (!Number.isInteger(port) || port < 0 || port > 65535) throw new Error('PORT deve ser um inteiro entre 0 e 65535.');
@@ -23,7 +23,7 @@ export async function iniciarHttp({ port = Number(process.env.PORT || 3000), hos
     const caminho = req.url?.split('?')[0];
     // Health check não processa dados do cliente; funciona também no proxy interno do Render.
     if (caminho === '/health' && (req.method === 'GET' || req.method === 'HEAD')) {
-      return json(res, 200, { status: 'ok', catalogo_carregado: true, total_filmes: filmes.length });
+      return json(res, 200, { status: 'ok', catalogo_carregado: true, total_filmes: filmes.length, filmes_reais: filmes.filter(f => f.tipo === 'real').length, filmes_ficticios: filmes.filter(f => f.tipo === 'ficticio').length, versao: '2.0.0' });
     }
     if (!validarHost(req, res)) return;
     if (req.headers.origin) {

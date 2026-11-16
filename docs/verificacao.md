@@ -1,26 +1,31 @@
-# Verificação da entrega
+# Verificação da versão 2.0.0
 
-Data: 16/11/2026. Ambiente local: macOS, Node.js 24.14.1 e npm 11.19.0.
+Data: 16/11/2026. Ambiente local: macOS, Node.js 24.14.1.
 
 ## Executado e observado
 
-- Instalação das dependências oficiais com versões fixadas e lockfile.
-- `npm install --ignore-scripts`: 17 pacotes instalados, auditoria sem vulnerabilidades reportadas naquele momento.
-- `npm ci --ignore-scripts --offline --no-audit --no-fund`: instalação limpa pelo lockfile, usando o cache local, concluída.
-- `npm test`: **19 testes aprovados**, sem testes ignorados.
-- `npm run verificar`: descoberta das sete ferramentas e chamadas reais de busca, detalhes, comparação, planejamento, estatísticas e alternativas por stdio.
-- Processo HTTP iniciado pela entrada `src/servidor-http.mjs`, saúde conferida e cliente externo do SDK executado contra sua porta local.
-- Processo HTTP antigo encerrado por SIGTERM e versão 1.1.0 iniciada na porta 3000.
-- `npm run verificar -- http://localhost:3000/mcp`: sete ferramentas verificadas no servidor atualizado.
-- `GET http://localhost:3000/health`: `status: ok`, `catalogo_carregado: true`, `total_filmes: 60`.
+- Importação pela API pública Wikidata, sem chave, com metadados de imagem do Wikimedia Commons.
+- 100 filmes reais únicos, todos com direção, duração e créditos de atuação/voz.
+- 67 avaliações históricas IMDb via Wikidata; 30 imagens licenciadas, sendo dois pôsteres.
+- Preservados os 60 filmes fictícios e seus IDs. Total: 160 filmes, 148 incluídos como disponíveis no catálogo local.
+- `npm run importar:wikidata`: reconstrução usando cache local concluída, com validação antes da gravação.
+- `npm test`: **28 testes aprovados**, sem testes ignorados.
+- `npm run verificar`: descoberta e chamadas das sete ferramentas por stdio; busca real por diretor, ficha de A Origem com elenco e fonte e exemplos fictícios preservados.
+- Integração HTTP com SDK MCP: testes em porta temporária, duas conexões independentes, rejeição de Host/Origin inválidos e limite de corpo.
 
-Os testes cobrem 60 filmes, 48 disponíveis, filtros, fronteiras de duração e idade, paginação completa, busca vazia, ID inexistente, argumentos inválidos e chamadas reais nos dois transportes. As consultas avançadas cobrem busca sem acentos, listas OU/E, exclusões, intervalos inválidos, ordenação, idiomas e temas, comparação com IDs ausentes, sessões sem filtros explícitos, intervalos entre filmes, orçamento exato, estatísticas globais e alternativas com restrições preservadas. O teste HTTP também verifica 403 para host/origem recusados, 413 para corpo grande e duas conexões consecutivas independentes.
+## Casos verificados
 
-## Ainda depende de uma etapa externa
+Filtros por ator, título original/alternativo, diretor, múltiplos países/idiomas, nota e votos da mesma avaliação; paginação e ordenação; dados desconhecidos excluídos dos filtros exigentes; comparação com duração ausente; sessões sem repetição e dentro do orçamento; contagem de todas as combinações sem guardar todas em memória; alternativas preservando catálogo e ator; classificação desconhecida não considerada infantil; identificação de anime como animação; imagem relacionada distinta de pôster; parser de notas que não mistura percentuais ou fontes.
 
-- Criação de repositório remoto e implantação no Render.
-- Validação na infraestrutura do Render e atribuição da URL final.
-- Cadastro e execução agendada no cron-job.org.
-- Conexão e uso efetivo por um modelo na conta do professor, no Codex ou ChatGPT.
+A origem dos registros foi conferida por IDs Wikidata e IMDb. Campos sem informação não foram preenchidos com estimativas. O verificador do SDK não usa um modelo de IA.
 
-O cliente de teste usa MCP sem IA. Nenhuma configuração pessoal de MCP, serviço hospedado ou cron foi criada nesta entrega. `render.yaml` foi preparado conforme a referência oficial, mas não foi submetido ao provedor.
+## Reproduzir a validação da hospedagem
+
+A implantação anterior no Render já foi validada neste projeto. Para conferir a revisão 2.0.0 depois do deploy:
+
+```bash
+curl --fail --max-time 60 https://cinecatalogo-mcp.onrender.com/health
+npm run verificar -- https://cinecatalogo-mcp.onrender.com/mcp
+```
+
+A saúde deve informar `versao: "2.0.0"`, `total_filmes: 160`, `filmes_reais: 100` e `filmes_ficticios: 60`. O verificador deve concluir também as consultas de filmes reais. A conexão do ChatGPT precisa atualizar a descoberta dos filtros; o cadastro do cron continua apontando para `/health`.

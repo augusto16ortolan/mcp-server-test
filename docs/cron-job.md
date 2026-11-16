@@ -7,13 +7,13 @@ Faça esta etapa depois do deploy, quando tiver a URL real e `/health` já respo
 3. Informe `https://SEU-SERVICO.onrender.com/health`, substituindo o domínio.
 4. Selecione **a cada 5 minutos**. Se usar agendamento personalizado, os minutos são 0, 5, 10, 15…55, nas horas e dias desejados. A expressão equivalente é `*/5 * * * *`, caso a interface ofereça esse formato.
 5. Selecione fuso **America/Sao_Paulo** e método **GET**. Não precisa de corpo, autenticação ou cabeçalho especial.
-6. Execute o teste manual. Confira HTTP 200 e `status: ok`, com 60 filmes.
+6. Execute o teste manual. Confira HTTP 200 e `status: ok`, com 160 filmes.
 7. Salve/ative e confira uma execução agendada no histórico. Opcionalmente habilite notificações de falha e recuperação para seu próprio canal.
 
 Resposta prevista:
 
 ```json
-{"status":"ok","catalogo_carregado":true,"total_filmes":60}
+{"status":"ok","catalogo_carregado":true,"total_filmes":160,"filmes_reais":100,"filmes_ficticios":60,"versao":"2.0.0"}
 ```
 
 A chamada é pequena, não executa ferramenta MCP e não chama modelo de IA. `/health` comprova que o processo está atendendo e carregou o catálogo; não comprova que a descoberta e a chamada MCP funcionam. Para isso, execute o verificador do projeto.

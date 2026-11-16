@@ -1,10 +1,28 @@
 # CineCatálogo MCP
 
-Servidor didático de cinema com **60 filmes fictícios em português**, 48 disponíveis e 12 indisponíveis. Tem dez gêneros, sete climas, 14 temas, buscas combinadas, comparação de filmes, planejamento de sessões e estatísticas. As fichas incluem diretor, país, idiomas, avisos de conteúdo e coleções, todos fictícios. Não consulta plataformas de streaming, não grava dados e não chama uma API de IA.
+Servidor MCP em português com **100 filmes reais do Wikidata e 60 filmes fictícios para demonstração**. Oferece sete ferramentas: busca com filtros, fichas com elenco/direção, comparação, planejamento de sessões, estatísticas e alternativas explicadas. Os dados ficam no projeto; consultas não dependem de uma API externa nem usam chave de IA.
 
-## Começar no seu computador
+**Servidor publicado:** `https://cinecatalogo-mcp.onrender.com/mcp`
 
-Requer Node.js 24 (testado com 24.14.1) e npm. Abra o terminal nesta pasta:
+**Saúde:** `https://cinecatalogo-mcp.onrender.com/health`
+
+## Filmes reais e limites dos dados
+
+Use `catalogo: "reais"`, `"ficticios"` ou `"todos"` (padrão). Cada resultado informa seu `tipo`. IDs antigos `FILME-001` continuam funcionando; os reais usam IDs estáveis como `REAL-Q25188` (A Origem).
+
+As fichas reais incluem título original e alternativos, ano, gêneros, duração, diretores, países, idiomas originais, créditos de atuação/voz, avaliações quando registradas na fonte e imagens quando possuem licença identificada. O catálogo foi selecionado para incluir cinema brasileiro, animações, clássicos e diferentes gêneros.
+
+- Notas são **IMDb via Wikidata, escala 0–10**, com a data registrada pela fonte e a data da importação. Não representam consulta atual ao IMDb. Ausência de nota é `null`.
+- Imagem relacionada não é necessariamente pôster. `poster_url` só existe quando o Wikidata identifica o arquivo como pôster. `imagem` inclui autor, licença e página do arquivo.
+- Classificação etária brasileira, avisos de conteúdo, sinopses, dublagens e legendas não foram inventados. Campos sem fonte ficam nulos ou vazios.
+- `disponivel` significa incluído no catálogo local para o exercício. Não indica streaming, ingresso ou licença para exibir um filme.
+- Filtros por idade, conteúdo, áudio, duração ou nota não aceitam informação desconhecida como correspondência.
+
+Veja [origem, cobertura, atualização e exemplos dos filmes reais](docs/filmes-reais.md).
+
+## Executar localmente
+
+Requer Node.js 24 e npm:
 
 ```bash
 npm ci --ignore-scripts
@@ -12,9 +30,7 @@ npm test
 npm run verificar
 ```
 
-O último comando inicia o servidor **stdio**, descobre as ferramentas e realiza consultas reais pelo MCP. Ele termina sozinho e **não utiliza um modelo de IA**.
-
-Para testar HTTP, abra um terminal e mantenha o servidor rodando:
+O verificador inicia um servidor stdio e chama as sete ferramentas usando o SDK MCP, sem modelo de IA. Para HTTP:
 
 ```bash
 npm start
@@ -25,108 +41,94 @@ Em outro terminal, na mesma pasta:
 ```bash
 curl http://localhost:3000/health
 npm run verificar -- http://localhost:3000/mcp
+npm run consultar -- buscar_filmes '{"catalogo":"reais","diretor":"Christopher Nolan","ordenar_por":"nota","ordem":"desc"}'
+npm run consultar -- obter_detalhes_filme '{"id":"REAL-Q25188"}'
+npm run consultar -- planejar_sessao '{"tempo_disponivel":300,"quantidade_filmes":2,"intervalo_minutos":10,"filtros":{"catalogo":"reais","genero":"ficção científica"}}'
 ```
 
-A saúde retorna `status: ok` e `total_filmes: 60`. O verificador encontra quatro comédias disponíveis de até 110 minutos. Encerre o servidor HTTP com Ctrl+C.
-
-## Consultas manuais com seus filtros
-
-Com `npm start` rodando em outro terminal, execute nesta pasta:
-
-```bash
-npm run consultar -- listar_filtros
-npm run consultar -- buscar_filmes '{"genero":"animação","duracao_maxima":90,"limite":10}'
-npm run consultar -- obter_detalhes_filme '{"id":"FILME-013"}'
-```
-
-Use aspas simples em volta do JSON para preservar as aspas duplas internas no terminal. O destino padrão é `http://localhost:3000/mcp`. Para consultar o servidor hospedado, acrescente a URL real ao final:
-
-```bash
-npm run consultar -- buscar_filmes '{"genero":"comédia"}' https://SEU-SERVICO.onrender.com/mcp
-```
-
-O comando usa o cliente oficial MCP, não um modelo de IA. Ele permite observar os dados antes de pedir ao assistente que os interprete.
-
-## Guias para os próximos passos
-
-1. [Conectar ao Codex](docs/conectar-codex.md), local ou remoto.
-2. [Hospedar no Render](docs/deploy-render.md).
-3. [Configurar o cron-job.org](docs/cron-job.md).
-4. [Conectar ao ChatGPT](docs/conectar-chatgpt.md).
-5. [Roteiro de aula com resultados esperados](docs/roteiro-demonstracao.md).
-6. [Solução de problemas](docs/solucao-de-problemas.md).
-7. [Registro de verificação](docs/verificacao.md).
-8. [Consultas avançadas: parâmetros, comandos e perguntas](docs/consultas-avancadas.md).
+Para usar a hospedagem, acrescente `https://cinecatalogo-mcp.onrender.com/mcp` ao final do comando `consultar`, ou passe essa URL ao `verificar`. Encerre o servidor local com Ctrl+C.
 
 ## Ferramentas
 
-| Nome | Entrada | Resposta |
-|---|---|---|
-| `listar_filtros` | `{}` | Valores aceitos, idiomas, temas, coleções e totais |
-| `buscar_filmes` | Filtros opcionais abaixo | Registros resumidos, total e próximo offset |
-| `obter_detalhes_filme` | `{"id":"FILME-001"}` | Ficha completa com sinopse, ou `encontrado: false` |
-
-| `comparar_filmes` | De dois a cinco IDs | Fichas lado a lado e diferença de duração |
-| `planejar_sessao` | Tempo, quantidade, intervalo e filtros | Combinações que cabem no tempo disponível |
-| `resumir_catalogo` | Filtros e agrupamento opcionais | Contagens e duração média de todos os resultados |
-| `sugerir_alternativas` | Filtros e critérios que podem mudar | Propostas com cada alteração explicitada |
-
-### Filtros de busca
-
-| Parâmetro | Valores |
+| Ferramenta | Uso |
 |---|---|
-| `titulo`, `diretor`, `colecao` | Trecho do nome, ignorando acentos e maiúsculas |
-| `genero`, `clima` | Um valor válido; preservam compatibilidade com a primeira versão |
-| `generos`, `climas`, `temas` | Listas de valores retornados por `listar_filtros` |
-| `modo_generos`, `modo_climas`, `modo_temas` | `qualquer` (OU, padrão) ou `todos` (E) dentro de cada lista |
-| `excluir_generos`, `excluir_conteudos` | Elimina filmes que tenham qualquer item da lista |
-| `duracao_minima`, `duracao_maxima` | Inteiros de 1 a 300 minutos, limites inclusivos |
-| `ano`, `ano_minimo`, `ano_maximo` | Ano exato e/ou intervalo inclusivo, de 1900 a 2100 |
-| `pais`, `idioma_original`, `audio`, `legenda` | Valor completo, ignorando acentos e maiúsculas |
-| `idade_publico` | Inteiro de 0 a 18, idade da pessoa mais nova da sessão |
-| `somente_disponiveis` | Booleano, padrão `true` na busca |
-| `ordenar_por`, `ordem` | `titulo`, `duracao` ou `ano`; `asc` ou `desc` |
-| `limite`, `offset` | De 1 a 10 resultados (padrão 5); deslocamento de 0 a 100000 (padrão 0) |
+| `listar_filtros` | Valores disponíveis, diretores, gêneros, idiomas e cobertura dos dados |
+| `buscar_filmes` | Filtros combinados, ordenação, até dez filmes por página |
+| `obter_detalhes_filme` | Ficha completa, elenco, fontes, avaliação, imagem e licença |
+| `comparar_filmes` | De dois a cinco IDs, com diferenças de duração quando conhecidas |
+| `planejar_sessao` | De um a três filmes, duração total e intervalos dentro do orçamento |
+| `resumir_catalogo` | Estatísticas sobre todos os resultados, sem paginação |
+| `sugerir_alternativas` | Propostas explícitas de mudança na duração máxima ou nos gêneros exigidos |
 
-Filtros de campos diferentes se combinam por E. Dentro das listas, o modo seleciona OU ou E. Exclusões sempre prevalecem. Por exemplo, exigir e excluir comédia ao mesmo tempo retorna zero filmes. A ordenação padrão é título crescente, com desempate estável por título/ID.
+Todas são somente leitura. A IA explica as recomendações; o servidor filtra, calcula e fornece os dados.
 
-A busca não inclui sinopse; consulte detalhes por ID. `proximo_offset: null` indica fim da lista. Lista vazia não é erro. Valores inválidos geram erro de validação. Consulte `listar_filtros` para usar os valores exatos dos campos enumerados, como `ficção científica`.
+## Filtros
 
-Exemplo de argumentos MCP (não é um corpo REST para enviar diretamente a `/mcp`):
+| Parâmetro | Uso |
+|---|---|
+| `catalogo` | `reais`, `ficticios` ou `todos` (padrão) |
+| `titulo` | Trecho do título exibido, original ou alternativo |
+| `diretor`, `ator` | Trecho do nome; elenco pode ser incompleto |
+| `genero`, `generos`, `excluir_generos` | Inclusões e exclusões; descubra valores em `listar_filtros` |
+| `modo_generos` | `qualquer` (OU) ou `todos` (E) dentro da lista |
+| `duracao_minima`, `duracao_maxima` | De 1 a 600 minutos, inclusivos |
+| `ano`, `ano_minimo`, `ano_maximo` | Ano exato ou intervalo de 1888 a 2100 |
+| `pais`, `idioma_original` | Considera todos os países/idiomas informados |
+| `nota_minima`, `votos_minimos` | Nota de 0 a 10 e número mínimo de votos da mesma avaliação |
+| `com_imagem`, `com_poster` | Booleanos; imagens relacionadas e pôsteres são distintos |
+| `idade_publico` | Idade de 0 a 18; indicação desconhecida é excluída |
+| `clima`, `climas`, `modo_climas` | Climas editoriais existentes nos exemplos fictícios |
+| `temas`, `modo_temas` | Temas editoriais existentes nos exemplos fictícios |
+| `excluir_conteudos` | Também exclui filmes cujos avisos são desconhecidos |
+| `audio`, `legenda`, `colecao` | Dados disponíveis nos exemplos fictícios |
+| `somente_disponiveis` | Padrão `true`; disponibilidade apenas no catálogo |
+| `ordenar_por`, `ordem` | `titulo`, `duracao`, `ano`, `nota` ou `votos`; `asc` ou `desc` |
+| `limite`, `offset` | De 1 a 10 resultados (padrão 5); início da página (padrão 0) |
 
-```json
-{"genero":"comédia","clima":"leve","duracao_maxima":110,"idade_publico":10,"limite":5}
-```
+Filtros de campos diferentes se combinam por E. Listas aceitam OU/E e exclusões prevalecem. Nomes e gêneros ignoram acentos e maiúsculas; país/idioma exigem o nome completo. Valores desconhecidos ficam no fim de uma ordenação. Gênero sem correspondência retorna zero resultados. Parâmetros desconhecidos ou intervalos invertidos geram erro.
 
-O catálogo é inventado. A indicação etária é didática, não oficial. Disponibilidade refere-se apenas ao exercício. O servidor fornece dados; a recomendação em linguagem natural é responsabilidade do modelo e do aplicativo que o utiliza.
+A busca omite o elenco completo e as notas de importação; consulte detalhes por ID. `proximo_offset: null` indica o fim. `resumir_catalogo` inclui indisponíveis por padrão e calcula médias somente sobre valores conhecidos.
 
-## Arquitetura e leitura do código
+## Atualizar os 100 filmes reais
 
-- `dados/filmes.json`: os 60 registros, editáveis e versionados.
-- `src/catalogo.mjs`: consultas, comparação, combinações de sessões e estatísticas sem transporte.
-- `src/schemas.mjs`: campos, limites e validações de entrada e do catálogo.
-- `src/ferramentas.mjs`: descrições e registro das sete ferramentas MCP.
-- `src/servidor-stdio.mjs`: processo local, logs em stderr.
-- `src/servidor-http.mjs`: Streamable HTTP sem estado, `/mcp` e `/health`.
-- `scripts/verificar-mcp.mjs`: cliente real do SDK, sem IA.
-- `tests/`: regras do catálogo e integrações stdio/HTTP.
-
-O servidor lê e valida o catálogo uma vez ao iniciar. Para mudar filmes, edite o JSON e reinicie; no Render, publique uma nova revisão. Os 60 registros são a base dos testes didáticos: ao ampliar o catálogo, atualize as expectativas correspondentes.
-
-## Configuração
-
-`PORT` tem padrão 3000 localmente. O Render define a porta e seu hostname automaticamente. `ALLOWED_HOSTS` permite hostnames adicionais, separados por vírgula, para domínio próprio. `ALLOWED_ORIGINS` permite origens exatas adicionais, como `https://seu-cliente.example`, somente se necessário. Chamadas sem Origin, comuns entre servidores, são aceitas. Não há CORS aberto para páginas arbitrárias.
-
-O arquivo `.env.example` é uma referência. O programa não carrega `.env` automaticamente. Para usar um arquivo local, copie-o para `.env` e execute:
+A cópia já está incluída; **não precisa importar para rodar ou publicar**.
 
 ```bash
-node --env-file=.env src/servidor-http.mjs
+npm run importar:wikidata
+# Consultar novamente as fontes, ignorando o cache local:
+npm run importar:wikidata -- --atualizar
+npm test
 ```
 
-No Render, configure as variáveis no painel. Não é necessária chave OpenAI, token GitHub ou chave de filmes no processo.
+O importador usa os IDs fixados em `dados/selecao-reais.json`, consulta Wikidata e metadados de licença do Wikimedia Commons, valida o conjunto inteiro e só então substitui `dados/filmes-reais.json`. Falhas preservam a versão anterior. `.cache/` não vai para o GitHub. No Render, os dados atualizados chegam por commit/deploy; não dependa do disco temporário para persistir atualizações.
 
-## Escopo de exposição
+## Estrutura
 
-Este é um catálogo público, anônimo e somente leitura. Depois de hospedado, qualquer pessoa com a URL pode consultá-lo. Os limites de entrada, validações de Host/Origin e tamanho máximo de corpo (16 KiB) não substituem autenticação. Não inclua dados privados nem ações de escrita sem revisar esse escopo. Logs mostram ferramentas e contagens, sem armazenar conversas.
+- `dados/filmes.json`: 60 exemplos fictícios preservados.
+- `dados/filmes-reais.json`: 100 fichas reais com fonte e data.
+- `dados/selecao-reais.json`: seleção auditável por ID Wikidata e IMDb.
+- `scripts/importar-wikidata.mjs` e `scripts/lib/`: importação, interpretação de notas, gêneros e imagens.
+- `src/schemas.mjs`: validação das fichas e argumentos.
+- `src/catalogo.mjs`: consultas e cálculos independentes de transporte.
+- `src/ferramentas.mjs`: registro das sete ferramentas.
+- `src/servidor-stdio.mjs` e `src/servidor-http.mjs`: transportes local e remoto.
+- `tests/`: regressões dos exemplos fictícios, regras dos reais, importador e MCP real nos dois transportes.
 
-Os testes locais não provam disponibilidade no Render ou acesso por sua conta do ChatGPT. Esses passos estão preparados nos guias e precisam ser executados após a implantação.
+## Hospedar e conectar
+
+1. [Render](docs/deploy-render.md).
+2. [cron-job.org](docs/cron-job.md).
+3. [ChatGPT](docs/conectar-chatgpt.md).
+4. [Codex](docs/conectar-codex.md).
+5. [Perguntas e consultas avançadas](docs/consultas-avancadas.md).
+6. [Roteiro de aula](docs/roteiro-demonstracao.md).
+7. [Solução de problemas](docs/solucao-de-problemas.md).
+8. [Verificação](docs/verificacao.md).
+
+`PORT` tem padrão 3000; Render/Railway fornecem a porta do serviço. Hostnames públicos fornecidos em `RENDER_EXTERNAL_HOSTNAME` e `RAILWAY_PUBLIC_DOMAIN` são reconhecidos. Domínios adicionais vão em `ALLOWED_HOSTS`; origens de navegador adicionais em `ALLOWED_ORIGINS`. O `.env.example` é referência; use `node --env-file=.env src/servidor-http.mjs` se precisar carregar um `.env` local.
+
+O servidor é público e anônimo, aceita corpo de até 16 KiB e não grava dados por MCP. Não inclua dados privados. A importação roda como comando administrativo local, não como ferramenta exposta à IA.
+
+## Fontes e atribuição
+
+Metadados reais: [Wikidata, CC0](https://www.wikidata.org/wiki/Wikidata:Data_access). Cada ficha registra entidade, revisão e propriedades utilizadas. Imagens: [Wikimedia Commons](https://commons.wikimedia.org/), com licença individual em cada ficha. Ao exibir uma imagem, inclua os créditos e o link da licença. O programa não baixa ou republica os arquivos de imagem.

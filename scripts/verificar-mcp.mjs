@@ -16,8 +16,8 @@ try {
   assert.deepEqual(tools.map(t => t.name).sort(), ['buscar_filmes', 'comparar_filmes', 'listar_filtros', 'obter_detalhes_filme', 'planejar_sessao', 'resumir_catalogo', 'sugerir_alternativas']);
   console.log('Ferramentas descobertas:', tools.map(t => t.name).join(', '));
   const filtros = await cliente.callTool({ name: 'listar_filtros', arguments: {} });
-  assert.equal(filtros.structuredContent.total, 60);
-  const argumentos = { genero: 'comédia', duracao_maxima: 110, limite: 5 };
+  assert.equal(filtros.structuredContent.total, 160);
+  const argumentos = { catalogo: 'ficticios', genero: 'comédia', duracao_maxima: 110, limite: 5 };
   console.log('Argumentos:', JSON.stringify(argumentos));
   const busca = await cliente.callTool({ name: 'buscar_filmes', arguments: argumentos });
   assert.equal(busca.structuredContent.total, 4);
@@ -31,10 +31,17 @@ try {
   assert.ok(sessao.structuredContent.sessoes.length > 0);
   assert.ok(sessao.structuredContent.sessoes.every(s => s.duracao_total <= 180));
   const resumo = await cliente.callTool({ name: 'resumir_catalogo', arguments: {} });
-  assert.equal(resumo.structuredContent.total, 60);
-  assert.equal(resumo.structuredContent.disponiveis, 48);
+  assert.equal(resumo.structuredContent.total, 160);
+  assert.equal(resumo.structuredContent.disponiveis, 148);
   const alternativas = await cliente.callTool({ name: 'sugerir_alternativas', arguments: { filtros: { genero: 'comédia', duracao_maxima: 70, idade_publico: 0 }, acrescimo_maximo_minutos: 20 } });
   assert.equal(alternativas.structuredContent.total_alternativas, 2);
   console.log('Consultas avançadas: comparação, sessão, estatísticas e alternativas verificadas.');
+  const reais = await cliente.callTool({ name: 'buscar_filmes', arguments: { catalogo: 'reais', diretor: 'Christopher Nolan', ordenar_por: 'nota', ordem: 'desc' } });
+  assert.ok(reais.structuredContent.total > 0);
+  assert.ok(reais.structuredContent.filmes.every(f => f.tipo === 'real'));
+  const origem = await cliente.callTool({ name: 'obter_detalhes_filme', arguments: { id: 'REAL-Q25188' } });
+  assert.ok(origem.structuredContent.filme.elenco.some(a => a.nome.includes('DiCaprio')));
+  assert.equal(origem.structuredContent.filme.fonte.nome, 'Wikidata');
+  console.log('Filmes reais: busca por diretor, ordenação e ficha com elenco/fonte verificadas.');
   console.log('Verificação MCP concluída. Este cliente não utiliza modelo de IA.');
 } finally { await cliente.close(); }

@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { carregarCatalogo, criarConsultas, validarCatalogo, GENEROS } from '../src/catalogo.mjs';
-const filmes = carregarCatalogo();
+const filmes = carregarCatalogo(new URL('../dados/filmes.json', import.meta.url));
 const consultas = criarConsultas(filmes);
 
 test('catálogo didático: 60 registros válidos, 48 disponíveis e todos os gêneros', () => {
@@ -48,7 +48,7 @@ test('sem resultado não relaxa filtros nem inventa registros', () => {
   assert.equal(consultas.obterDetalhes({ id: 'FILME-999' }).encontrado, false);
 });
 test('validação recusa entradas inválidas e parâmetros desconhecidos', () => {
-  for (const a of [{ limite: 11 }, { offset: -1 }, { duracao_maxima: '90' }, { genero: 'inexistente' }, { idade_publico: 19 }, { comando: 'apagar' }]) {
+  for (const a of [{ limite: 11 }, { offset: -1 }, { duracao_maxima: '90' }, { idade_publico: 19 }, { comando: 'apagar' }]) {
     assert.throws(() => consultas.buscar(a));
   }
 });

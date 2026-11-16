@@ -1,6 +1,6 @@
 # Consultas avançadas e perguntas para a aula
 
-O servidor tem sete ferramentas e 60 filmes fictícios. Diretores, países, idiomas, coleções e avisos também são dados didáticos; não são informações sobre filmes reais. Não há consulta a streaming, favoritos persistentes ou notas de espectadores.
+O servidor tem sete ferramentas, 100 filmes reais e 60 fictícios. Este guia preserva os exemplos fictícios: acrescente `catalogo: "ficticios"` aos filtros para reproduzir os resultados. Para dados reais, veja [filmes reais](filmes-reais.md). Diretores, países, idiomas, coleções e avisos também são dados didáticos; não são informações sobre filmes reais. Não há consulta a streaming, favoritos persistentes ou notas de espectadores.
 
 ## Como combinar filtros
 
@@ -14,9 +14,9 @@ Com o servidor HTTP rodando (`npm start`), execute na pasta do projeto:
 
 ```bash
 npm run consultar -- listar_filtros
-npm run consultar -- buscar_filmes '{"titulo":"onibus"}'
-npm run consultar -- buscar_filmes '{"generos":["comédia","ficção científica"],"modo_generos":"todos"}'
-npm run consultar -- buscar_filmes '{"temas":["amizade"],"audio":"português","duracao_minima":70,"duracao_maxima":100,"ano_minimo":2000,"ano_maximo":2020,"excluir_conteudos":["cenas de tensão"],"ordenar_por":"duracao","ordem":"asc","limite":10}'
+npm run consultar -- buscar_filmes '{"catalogo":"ficticios","titulo":"onibus"}'
+npm run consultar -- buscar_filmes '{"catalogo":"ficticios","generos":["comédia","ficção científica"],"modo_generos":"todos"}'
+npm run consultar -- buscar_filmes '{"catalogo":"ficticios","temas":["amizade"],"audio":"português","duracao_minima":70,"duracao_maxima":100,"ano_minimo":2000,"ano_maximo":2020,"excluir_conteudos":["cenas de tensão"],"ordenar_por":"duracao","ordem":"asc","limite":10}'
 ```
 
 A busca retorna até dez filmes por página. Para continuar, repita os mesmos filtros e a mesma ordenação usando o `proximo_offset` retornado como novo `offset`.
@@ -33,10 +33,10 @@ Resultado esperado: 98 e 82 minutos; diferença de 16 minutos. O modelo pode mon
 
 ## Planejar uma sessão
 
-`planejar_sessao` considera todos os candidatos filtrados, sem depender de uma página da busca. Aceita de um a três filmes, sem repetição, e de zero a 60 minutos por intervalo. O tempo total permitido vai de um a 1000 minutos. Por padrão, usa dois filmes, dez minutos entre eles e retorna até três combinações (máximo cinco).
+`planejar_sessao` considera todos os candidatos filtrados, sem depender de uma página da busca. Aceita de um a três filmes, sem repetição, e de zero a 60 minutos por intervalo. O tempo total permitido vai de um a 2000 minutos. Por padrão, usa dois filmes, dez minutos entre eles e retorna até três combinações (máximo cinco).
 
 ```bash
-npm run consultar -- planejar_sessao '{"tempo_disponivel":180,"quantidade_filmes":2,"intervalo_minutos":10,"filtros":{"clima":"leve","idade_publico":10},"limite":3}'
+npm run consultar -- planejar_sessao '{"tempo_disponivel":180,"quantidade_filmes":2,"intervalo_minutos":10,"filtros":{"catalogo":"ficticios","clima":"leve","idade_publico":10},"limite":3}'
 ```
 
 Para dois filmes, conta um intervalo; para três, dois. A soma dos filmes e intervalos nunca ultrapassa o orçamento. As opções priorizam menor tempo restante, com desempate por IDs. Não significa que a primeira seja o melhor filme artisticamente. A ordem dos filmes na resposta não é uma ordem narrativa de coleção.
@@ -49,18 +49,18 @@ As sessões usam apenas filmes disponíveis; `somente_disponiveis: false` é rec
 
 ```bash
 npm run consultar -- resumir_catalogo '{}'
-npm run consultar -- resumir_catalogo '{"agrupar_por":"pais","filtros":{"somente_disponiveis":true}}'
-npm run consultar -- resumir_catalogo '{"agrupar_por":"idade","filtros":{"genero":"animação"}}'
+npm run consultar -- resumir_catalogo '{"agrupar_por":"pais","filtros":{"catalogo":"ficticios","somente_disponiveis":true}}'
+npm run consultar -- resumir_catalogo '{"agrupar_por":"idade","filtros":{"catalogo":"ficticios","genero":"animação"}}'
 ```
 
-Sem filtros: 60 filmes, 48 disponíveis e 12 indisponíveis. Agrupamentos aceitos: `genero`, `clima`, `idade`, `pais` e `disponibilidade`. Um filme pode ter vários gêneros/climas, então a soma desses grupos pode ultrapassar o total de filmes.
+Sem filtros: 160 filmes, 148 disponíveis no catálogo local e 12 indisponíveis. Com `catalogo: "ficticios"`: 60, 48 e 12, respectivamente. Agrupamentos aceitos: `genero`, `clima`, `idade`, `pais`, `disponibilidade`, `tipo` e `diretor`. Um filme pode ter vários gêneros/climas, então a soma desses grupos pode ultrapassar o total de filmes.
 
 ## Alternativas quando não há resultados
 
 `sugerir_alternativas` procura primeiro correspondências exatas. Se encontrar, retorna `filmes_exatos` e não flexibiliza nada. Se não encontrar, pode ampliar a duração máxima e/ou remover a exigência dos gêneros de inclusão. Só considera os campos listados em `flexibilizar`.
 
 ```bash
-npm run consultar -- sugerir_alternativas '{"filtros":{"genero":"comédia","duracao_maxima":70,"idade_publico":0},"flexibilizar":["duracao_maxima"],"acrescimo_maximo_minutos":20}'
+npm run consultar -- sugerir_alternativas '{"filtros":{"catalogo":"ficticios","genero":"comédia","duracao_maxima":70,"idade_publico":0},"flexibilizar":["duracao_maxima"],"acrescimo_maximo_minutos":20}'
 ```
 
 Resultado esperado: nenhuma correspondência exata; propostas FILME-004 (82 minutos, acréscimo de 12) e FILME-002 (89 minutos, acréscimo de 19). Cada resultado informa `mudancas`, com o valor original e o proposto.
@@ -69,7 +69,7 @@ O padrão é flexibilizar somente `duracao_maxima`, em até 30 minutos. O acrés
 
 ## Perguntas para usar com o modelo
 
-Comece com “Use o MCP cinema e responda somente com dados do nosso catálogo”. A escolha e a sequência das ferramentas podem variar por modelo; observe as chamadas reais.
+Para os exemplos abaixo, comece com “Use o MCP cinema, filtre catalogo=ficticios e responda somente com esses dados”. A escolha e a sequência das ferramentas podem variar por modelo; observe as chamadas reais.
 
 1. Quais gêneros, temas, idiomas e coleções existem no catálogo?
 2. Procure um filme que tenha “onibus” no título, mesmo sem acento.

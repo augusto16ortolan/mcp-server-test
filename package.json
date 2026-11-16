@@ -1,8 +1,8 @@
 {
   "name": "cinecatalogo-mcp",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "Catálogo fictício de cinema para ensinar MCP, em português.",
+  "description": "Catálogo MCP em português: 100 filmes reais do Wikidata e 60 exemplos fictícios.",
   "type": "module",
   "engines": {
     "node": ">=24 <25"
@@ -12,7 +12,8 @@
     "start:stdio": "node src/servidor-stdio.mjs",
     "test": "node --test",
     "verificar": "node scripts/verificar-mcp.mjs",
-    "consultar": "node scripts/consultar.mjs"
+    "consultar": "node scripts/consultar.mjs",
+    "importar:wikidata": "node scripts/importar-wikidata.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/server": "2.4.0",

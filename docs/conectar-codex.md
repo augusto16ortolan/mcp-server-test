@@ -15,7 +15,7 @@ O comando grava o caminho absoluto da pasta atual. `node` precisa estar acessív
 
 Reabra a sessão, confira as ferramentas e peça:
 
-> Use o MCP cinema para listar os filtros. Depois busque comédias disponíveis com até 110 minutos. Informe os IDs e não use outras fontes.
+> Use o MCP cinema para listar os filtros. Depois filtre catalogo=ficticios e busque comédias disponíveis com até 110 minutos. Informe os IDs e não use outras fontes.
 
 Observe a chamada e os registros. Somente a configuração aparecer em `codex mcp list` não prova que o aplicativo carregou o servidor. O suporte e o recarregamento no desktop devem ser verificados na sessão real.
 

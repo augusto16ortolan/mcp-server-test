@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { carregarCatalogo, criarConsultas, validarCatalogo } from '../src/catalogo.mjs';
-const filmes = carregarCatalogo();
+const filmes = carregarCatalogo(new URL('../dados/filmes.json', import.meta.url));
 const c = criarConsultas(filmes);
 
 test('título e nomes ignoram acentos/caixa; coleção preserva ordem na ficha', () => {
