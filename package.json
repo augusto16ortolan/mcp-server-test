@@ -1,0 +1,23 @@
+{
+  "name": "cinecatalogo-mcp",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Catálogo fictício de cinema para ensinar MCP, em português.",
+  "type": "module",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "node src/servidor-http.mjs",
+    "start:stdio": "node src/servidor-stdio.mjs",
+    "test": "node --test",
+    "verificar": "node scripts/verificar-mcp.mjs",
+    "consultar": "node scripts/consultar.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
+    "@modelcontextprotocol/client": "2.4.0",
+    "@modelcontextprotocol/node": "2.1.2",
+    "zod": "4.6.7"
+  }
+}

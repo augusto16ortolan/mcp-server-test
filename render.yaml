@@ -1,0 +1,14 @@
+# Use este projeto como raiz de um repositório próprio.
+services:
+  - type: web
+    name: cinecatalogo-mcp
+    runtime: node
+    plan: free
+    buildCommand: npm ci --ignore-scripts
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 24.14.1

@@ -1,0 +1,1948 @@
+[
+  {
+    "id": "FILME-001",
+    "titulo": "O Último Ônibus para Saturno",
+    "ano": 2001,
+    "generos": [
+      "comédia",
+      "ficção científica"
+    ],
+    "duracao_minutos": 98,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "leve"
+    ],
+    "sinopse": "Uma motorista recebe um bilhete para uma linha interplanetária. Para voltar à Terra, ela precisa organizar uma excursão de passageiros muito distraídos.",
+    "disponivel": true,
+    "diretor": "Marina Valença",
+    "pais": "Brasil",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "viagem espacial",
+      "comunidade"
+    ],
+    "avisos_conteudo": [],
+    "colecao": {
+      "nome": "Viagens Impossíveis",
+      "ordem": 1
+    }
+  },
+  {
+    "id": "FILME-002",
+    "titulo": "A Padaria das Segundas Chances",
+    "ano": 2002,
+    "generos": [
+      "comédia"
+    ],
+    "duracao_minutos": 89,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "leve"
+    ],
+    "sinopse": "Dois irmãos tentam recuperar a padaria da avó com receitas improvisadas. Um concurso de pães transforma os erros da cozinha em encontros inesperados.",
+    "disponivel": true,
+    "diretor": "Caio Fontoura",
+    "pais": "Portugal",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "família",
+      "recomeço"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-003",
+    "titulo": "O Síndico de Férias",
+    "ano": 2003,
+    "generos": [
+      "comédia"
+    ],
+    "duracao_minutos": 104,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "leve"
+    ],
+    "sinopse": "O síndico deixa um prédio tranquilo nas mãos de um vizinho novato. Uma entrega trocada faz todos os moradores participarem de uma assembleia incomum.",
+    "disponivel": true,
+    "diretor": "Helena Brum",
+    "pais": "Argentina",
+    "idioma_original": "espanhol",
+    "audios": [
+      "espanhol",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "comunidade",
+      "aprendizado"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-004",
+    "titulo": "Um Guarda-Chuva para Três",
+    "ano": 2004,
+    "generos": [
+      "comédia"
+    ],
+    "duracao_minutos": 82,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "leve"
+    ],
+    "sinopse": "Três desconhecidos dividem um guarda-chuva durante uma tempestade. Cada desvio do caminho revela uma pequena confusão do bairro.",
+    "disponivel": true,
+    "diretor": "Rafael Nogueira",
+    "pais": "Canadá",
+    "idioma_original": "inglês",
+    "audios": [
+      "inglês"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "amizade",
+      "comunidade"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-005",
+    "titulo": "Manual do Tio Desastrado",
+    "ano": 2005,
+    "generos": [
+      "comédia"
+    ],
+    "duracao_minutos": 96,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "leve"
+    ],
+    "sinopse": "Um tio aceita organizar a festa dos sobrinhos usando um manual antigo. As crianças decidem ajudá-lo quando percebem que as instruções perderam algumas páginas.",
+    "disponivel": false,
+    "diretor": "Lia Monteverde",
+    "pais": "França",
+    "idioma_original": "francês",
+    "audios": [
+      "francês",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "família",
+      "criatividade"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-006",
+    "titulo": "O Concurso de Nada",
+    "ano": 2006,
+    "generos": [
+      "comédia"
+    ],
+    "duracao_minutos": 112,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "leve",
+      "intrigante"
+    ],
+    "sinopse": "Uma cidade cria um concurso sem categoria definida. Os moradores precisam decidir o que significa vencer antes que os jurados cheguem.",
+    "disponivel": true,
+    "diretor": "Bruno Alencastro",
+    "pais": "Brasil",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "comunidade",
+      "criatividade"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-007",
+    "titulo": "A Ponte das Sete Ilhas",
+    "ano": 2007,
+    "generos": [
+      "aventura"
+    ],
+    "duracao_minutos": 103,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "empolgante"
+    ],
+    "sinopse": "Uma aprendiz de cartógrafa encontra um mapa com uma ilha ausente. Ela atravessa um arquipélago para descobrir quem apagou aquele lugar.",
+    "disponivel": true,
+    "diretor": "Teresa Vilar",
+    "pais": "Portugal",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "viagem",
+      "investigação"
+    ],
+    "avisos_conteudo": [
+      "perigo em aventuras"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-008",
+    "titulo": "O Trem do Vale Azul",
+    "ano": 2008,
+    "generos": [
+      "aventura"
+    ],
+    "duracao_minutos": 94,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "empolgante"
+    ],
+    "sinopse": "Dois amigos embarcam no último trem de uma ferrovia esquecida. Em cada estação, uma pista ajuda a localizar a estação final.",
+    "disponivel": true,
+    "diretor": "Davi Castanheira",
+    "pais": "Argentina",
+    "idioma_original": "espanhol",
+    "audios": [
+      "espanhol"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "amizade",
+      "viagem"
+    ],
+    "avisos_conteudo": [
+      "perigo em aventuras"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-009",
+    "titulo": "A Bússola de Papel",
+    "ano": 2009,
+    "generos": [
+      "aventura"
+    ],
+    "duracao_minutos": 87,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "empolgante"
+    ],
+    "sinopse": "Uma menina constrói uma bússola para uma gincana. O objeto aponta para lugares ligados às histórias de sua família.",
+    "disponivel": true,
+    "diretor": "Nina Lacerda",
+    "pais": "Canadá",
+    "idioma_original": "inglês",
+    "audios": [
+      "inglês",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "família",
+      "criatividade"
+    ],
+    "avisos_conteudo": [
+      "perigo em aventuras"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-010",
+    "titulo": "Expedição ao Pico de Vidro",
+    "ano": 2010,
+    "generos": [
+      "aventura"
+    ],
+    "duracao_minutos": 121,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "empolgante"
+    ],
+    "sinopse": "Uma equipe de escaladores busca um observatório abandonado. A mudança do clima exige que o grupo reveja o plano e trabalhe em conjunto.",
+    "disponivel": false,
+    "diretor": "Artur Saldanha",
+    "pais": "França",
+    "idioma_original": "francês",
+    "audios": [
+      "francês",
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "natureza",
+      "amizade"
+    ],
+    "avisos_conteudo": [
+      "perigo em aventuras"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-011",
+    "titulo": "Os Navegantes do Rio Invertido",
+    "ano": 2011,
+    "generos": [
+      "aventura"
+    ],
+    "duracao_minutos": 108,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "empolgante"
+    ],
+    "sinopse": "Um barco de pesquisa encontra um trecho de rio que parece correr ao contrário. Os tripulantes investigam o fenômeno enquanto procuram uma comunidade isolada.",
+    "disponivel": true,
+    "diretor": "Clara Junqueira",
+    "pais": "Brasil",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "natureza",
+      "investigação"
+    ],
+    "avisos_conteudo": [
+      "perigo em aventuras"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-012",
+    "titulo": "O Farol Depois da Tempestade",
+    "ano": 2012,
+    "generos": [
+      "aventura"
+    ],
+    "duracao_minutos": 116,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "empolgante"
+    ],
+    "sinopse": "Uma jovem marinheira precisa levar suprimentos a um farol. Com a rota principal bloqueada, ela recupera os caminhos descritos nos diários do pai.",
+    "disponivel": true,
+    "diretor": "Ícaro Avelar",
+    "pais": "Portugal",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "família",
+      "memória"
+    ],
+    "avisos_conteudo": [
+      "perigo em aventuras"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-013",
+    "titulo": "A Cidade dos Botões Perdidos",
+    "ano": 2013,
+    "generos": [
+      "animação"
+    ],
+    "duracao_minutos": 76,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "leve"
+    ],
+    "sinopse": "Um botão se perde de um casaco e chega a uma cidade de objetos esquecidos. Com novos amigos, ele procura uma maneira de reencontrar sua dona.",
+    "disponivel": true,
+    "diretor": "Beatriz Montenegro",
+    "pais": "Argentina",
+    "idioma_original": "espanhol",
+    "audios": [
+      "espanhol",
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "amizade",
+      "viagem"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-014",
+    "titulo": "Luna e o Jardim de Nuvens",
+    "ano": 2014,
+    "generos": [
+      "animação"
+    ],
+    "duracao_minutos": 85,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "leve"
+    ],
+    "sinopse": "Uma pequena jardineira cultiva nuvens em vasos. Quando a chuva desaparece, ela descobre que cada planta precisa de um cuidado diferente.",
+    "disponivel": true,
+    "diretor": "Tomás Serpa",
+    "pais": "Canadá",
+    "idioma_original": "inglês",
+    "audios": [
+      "inglês",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "natureza",
+      "aprendizado"
+    ],
+    "avisos_conteudo": [],
+    "colecao": {
+      "nome": "Pequenos Inventores",
+      "ordem": 1
+    }
+  },
+  {
+    "id": "FILME-015",
+    "titulo": "O Pequeno Inventor de Ventos",
+    "ano": 2015,
+    "generos": [
+      "animação"
+    ],
+    "duracao_minutos": 90,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "leve"
+    ],
+    "sinopse": "Um menino cria máquinas que produzem brisas musicais. A invenção mais barulhenta acaba sendo a única capaz de ajudar a escola.",
+    "disponivel": false,
+    "diretor": "Luana Vidal",
+    "pais": "França",
+    "idioma_original": "francês",
+    "audios": [
+      "francês",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "criatividade",
+      "música"
+    ],
+    "avisos_conteudo": [],
+    "colecao": {
+      "nome": "Pequenos Inventores",
+      "ordem": 2
+    }
+  },
+  {
+    "id": "FILME-016",
+    "titulo": "Correio para a Lua",
+    "ano": 2016,
+    "generos": [
+      "animação"
+    ],
+    "duracao_minutos": 81,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "leve"
+    ],
+    "sinopse": "Uma carteirinha recebe uma carta sem endereço terrestre. Ela pede ajuda aos animais da floresta para completar sua primeira entrega espacial.",
+    "disponivel": true,
+    "diretor": "Miguel Figueira",
+    "pais": "Brasil",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "viagem espacial",
+      "amizade"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-017",
+    "titulo": "A Orquestra do Quintal",
+    "ano": 2017,
+    "generos": [
+      "animação"
+    ],
+    "duracao_minutos": 73,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "leve"
+    ],
+    "sinopse": "Insetos montam uma orquestra usando ferramentas de jardim. O ensaio vira uma busca por um instrumento que todos consigam ouvir.",
+    "disponivel": true,
+    "diretor": "Sofia Alvarenga",
+    "pais": "Portugal",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "música",
+      "comunidade"
+    ],
+    "avisos_conteudo": [],
+    "colecao": {
+      "nome": "Pequenos Inventores",
+      "ordem": 3
+    }
+  },
+  {
+    "id": "FILME-018",
+    "titulo": "O Dragão que Colecionava Xícaras",
+    "ano": 2018,
+    "generos": [
+      "animação"
+    ],
+    "duracao_minutos": 97,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "leve"
+    ],
+    "sinopse": "Um dragão prefere organizar sua coleção a guardar tesouros. Uma xícara quebrada o leva a visitar os artesãos de um reino vizinho.",
+    "disponivel": true,
+    "diretor": "Pedro Galvão",
+    "pais": "Argentina",
+    "idioma_original": "espanhol",
+    "audios": [
+      "espanhol",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "criatividade",
+      "viagem"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-019",
+    "titulo": "As Cartas do Inverno",
+    "ano": 2019,
+    "generos": [
+      "drama"
+    ],
+    "duracao_minutos": 118,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "emocionante"
+    ],
+    "sinopse": "Uma professora encontra cartas que nunca foram entregues. Ao procurar os destinatários, ela repensa uma despedida de sua própria juventude.",
+    "disponivel": true,
+    "diretor": "Elisa Marcondes",
+    "pais": "Canadá",
+    "idioma_original": "inglês",
+    "audios": [
+      "inglês",
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "memória",
+      "recomeço"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-020",
+    "titulo": "A Última Mesa da Estação",
+    "ano": 2020,
+    "generos": [
+      "drama"
+    ],
+    "duracao_minutos": 106,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "emocionante"
+    ],
+    "sinopse": "Um restaurante de estação recebe a notícia de que a linha será fechada. A cozinheira reúne antigos passageiros para uma refeição de despedida.",
+    "disponivel": false,
+    "diretor": "André Veredas",
+    "pais": "França",
+    "idioma_original": "francês",
+    "audios": [
+      "francês"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "comunidade",
+      "memória"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-021",
+    "titulo": "O Silêncio entre as Notas",
+    "ano": 2021,
+    "generos": [
+      "drama"
+    ],
+    "duracao_minutos": 127,
+    "idade_minima_sugerida": 14,
+    "climas": [
+      "emocionante"
+    ],
+    "sinopse": "Um músico perde a vontade de tocar após uma mudança de cidade. Uma oficina comunitária o aproxima de pessoas que também procuram um recomeço.",
+    "disponivel": true,
+    "diretor": "Marina Valença",
+    "pais": "Brasil",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "música",
+      "recomeço"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-022",
+    "titulo": "Quando a Rua Floresce",
+    "ano": 2022,
+    "generos": [
+      "drama"
+    ],
+    "duracao_minutos": 99,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "emocionante"
+    ],
+    "sinopse": "Vizinhos transformam um terreno vazio em jardim. As decisões sobre o espaço revelam conflitos e lembranças que ninguém costumava compartilhar.",
+    "disponivel": true,
+    "diretor": "Caio Fontoura",
+    "pais": "Portugal",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "comunidade",
+      "natureza"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-023",
+    "titulo": "Retratos de Domingo",
+    "ano": 2023,
+    "generos": [
+      "drama"
+    ],
+    "duracao_minutos": 114,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "emocionante"
+    ],
+    "sinopse": "Uma fotógrafa volta à cidade natal para cuidar do estúdio da família. Cada retrato que restaura traz uma versão diferente de sua história.",
+    "disponivel": true,
+    "diretor": "Helena Brum",
+    "pais": "Argentina",
+    "idioma_original": "espanhol",
+    "audios": [
+      "espanhol",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "família",
+      "memória"
+    ],
+    "avisos_conteudo": [
+      "conflitos familiares"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-024",
+    "titulo": "O Peso das Pequenas Coisas",
+    "ano": 2024,
+    "generos": [
+      "drama"
+    ],
+    "duracao_minutos": 138,
+    "idade_minima_sugerida": 16,
+    "climas": [
+      "emocionante"
+    ],
+    "sinopse": "Um restaurador recebe objetos de uma casa que será demolida. Ele precisa escolher o que preservar enquanto enfrenta mudanças em sua própria vida.",
+    "disponivel": true,
+    "diretor": "Rafael Nogueira",
+    "pais": "Canadá",
+    "idioma_original": "inglês",
+    "audios": [
+      "inglês"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "memória",
+      "recomeço"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão",
+      "temas adultos"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-025",
+    "titulo": "A Biblioteca de Amanhã",
+    "ano": 2025,
+    "generos": [
+      "ficção científica"
+    ],
+    "duracao_minutos": 109,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "reflexivo"
+    ],
+    "sinopse": "Uma bibliotecária descobre livros escritos por leitores do futuro. Ela investiga por que um deles descreve uma decisão que ainda não tomou.",
+    "disponivel": false,
+    "diretor": "Lia Monteverde",
+    "pais": "França",
+    "idioma_original": "francês",
+    "audios": [
+      "francês",
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "tempo",
+      "investigação"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-026",
+    "titulo": "Memórias em Órbita",
+    "ano": 2000,
+    "generos": [
+      "ficção científica"
+    ],
+    "duracao_minutos": 124,
+    "idade_minima_sugerida": 14,
+    "climas": [
+      "reflexivo"
+    ],
+    "sinopse": "Uma estação espacial armazena lembranças para viagens longas. Uma técnica encontra memórias sem dono e busca sua origem.",
+    "disponivel": true,
+    "diretor": "Bruno Alencastro",
+    "pais": "Brasil",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "viagem espacial",
+      "memória"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-027",
+    "titulo": "O Planeta das Duas Manhãs",
+    "ano": 2001,
+    "generos": [
+      "ficção científica"
+    ],
+    "duracao_minutos": 102,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "reflexivo"
+    ],
+    "sinopse": "Exploradores chegam a um planeta onde o dia parece começar duas vezes. Para retornar, precisam entender como os habitantes contam o tempo.",
+    "disponivel": true,
+    "diretor": "Teresa Vilar",
+    "pais": "Portugal",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "viagem espacial",
+      "tempo"
+    ],
+    "avisos_conteudo": [],
+    "colecao": {
+      "nome": "Viagens Impossíveis",
+      "ordem": 2
+    }
+  },
+  {
+    "id": "FILME-028",
+    "titulo": "A Máquina de Guardar Silêncios",
+    "ano": 2002,
+    "generos": [
+      "ficção científica"
+    ],
+    "duracao_minutos": 117,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "reflexivo"
+    ],
+    "sinopse": "Um engenheiro inventa um aparelho que registra os intervalos entre conversas. Os primeiros testes revelam informações que as palavras não contavam.",
+    "disponivel": true,
+    "diretor": "Davi Castanheira",
+    "pais": "Argentina",
+    "idioma_original": "espanhol",
+    "audios": [
+      "espanhol"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "criatividade",
+      "investigação"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-029",
+    "titulo": "Além da Janela de Marte",
+    "ano": 2003,
+    "generos": [
+      "ficção científica"
+    ],
+    "duracao_minutos": 132,
+    "idade_minima_sugerida": 14,
+    "climas": [
+      "reflexivo"
+    ],
+    "sinopse": "Uma pesquisadora observa luzes fora de uma base marciana. Sem contato imediato com a Terra, a equipe confronta explicações conflitantes.",
+    "disponivel": true,
+    "diretor": "Nina Lacerda",
+    "pais": "Canadá",
+    "idioma_original": "inglês",
+    "audios": [
+      "inglês",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "viagem espacial",
+      "investigação"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-030",
+    "titulo": "O Relógio das Estrelas",
+    "ano": 2004,
+    "generos": [
+      "ficção científica"
+    ],
+    "duracao_minutos": 96,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "reflexivo"
+    ],
+    "sinopse": "Uma estudante recebe um relógio que acompanha o nascimento de estrelas. Ela usa os registros para investigar uma transmissão de rádio misteriosa.",
+    "disponivel": false,
+    "diretor": "Artur Saldanha",
+    "pais": "França",
+    "idioma_original": "francês",
+    "audios": [
+      "francês",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "viagem espacial",
+      "tempo"
+    ],
+    "avisos_conteudo": [],
+    "colecao": {
+      "nome": "Viagens Impossíveis",
+      "ordem": 3
+    }
+  },
+  {
+    "id": "FILME-031",
+    "titulo": "A Costureira das Estações",
+    "ano": 2005,
+    "generos": [
+      "fantasia"
+    ],
+    "duracao_minutos": 101,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "empolgante"
+    ],
+    "sinopse": "Uma costureira repara as roupas que controlam as estações do ano. Uma linha desaparecida ameaça prolongar o inverno da cidade.",
+    "disponivel": true,
+    "diretor": "Clara Junqueira",
+    "pais": "Brasil",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "natureza",
+      "criatividade"
+    ],
+    "avisos_conteudo": [
+      "perigo em aventuras"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-032",
+    "titulo": "O Mercado dos Desejos Esquecidos",
+    "ano": 2006,
+    "generos": [
+      "fantasia"
+    ],
+    "duracao_minutos": 113,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "empolgante"
+    ],
+    "sinopse": "Um rapaz encontra uma feira que vende desejos abandonados. Ao comprar um desejo sem etiqueta, assume uma missão que não compreende.",
+    "disponivel": true,
+    "diretor": "Ícaro Avelar",
+    "pais": "Portugal",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "viagem",
+      "recomeço"
+    ],
+    "avisos_conteudo": [
+      "perigo em aventuras"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-033",
+    "titulo": "A Floresta que Mudava de Lugar",
+    "ano": 2007,
+    "generos": [
+      "fantasia"
+    ],
+    "duracao_minutos": 88,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "empolgante"
+    ],
+    "sinopse": "Crianças percebem que as trilhas da floresta mudam durante a noite. Elas desenham mapas para ajudar uma árvore a encontrar suas raízes.",
+    "disponivel": true,
+    "diretor": "Beatriz Montenegro",
+    "pais": "Argentina",
+    "idioma_original": "espanhol",
+    "audios": [
+      "espanhol",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "natureza",
+      "amizade"
+    ],
+    "avisos_conteudo": [
+      "perigo em aventuras"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-034",
+    "titulo": "Os Guardiões da Chuva Dourada",
+    "ano": 2008,
+    "generos": [
+      "fantasia"
+    ],
+    "duracao_minutos": 119,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "empolgante"
+    ],
+    "sinopse": "Aprendizes de guardiões precisam reunir sementes antes de uma chuva rara. Cada semente cresce apenas quando alguém conta uma história verdadeira.",
+    "disponivel": true,
+    "diretor": "Tomás Serpa",
+    "pais": "Canadá",
+    "idioma_original": "inglês",
+    "audios": [
+      "inglês",
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "natureza",
+      "aprendizado"
+    ],
+    "avisos_conteudo": [
+      "perigo em aventuras"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-035",
+    "titulo": "A Menina e o Castelo de Sal",
+    "ano": 2009,
+    "generos": [
+      "fantasia"
+    ],
+    "duracao_minutos": 92,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "empolgante"
+    ],
+    "sinopse": "Uma menina encontra um castelo que se dissolve a cada maré. Ela procura seus moradores para descobrir por que insistem em reconstruí-lo.",
+    "disponivel": false,
+    "diretor": "Luana Vidal",
+    "pais": "França",
+    "idioma_original": "francês",
+    "audios": [
+      "francês",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "natureza",
+      "comunidade"
+    ],
+    "avisos_conteudo": [
+      "perigo em aventuras"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-036",
+    "titulo": "O Alfaiate de Sombras",
+    "ano": 2010,
+    "generos": [
+      "fantasia"
+    ],
+    "duracao_minutos": 126,
+    "idade_minima_sugerida": 14,
+    "climas": [
+      "empolgante"
+    ],
+    "sinopse": "Um alfaiate conserta sombras que se desprenderam de seus donos. Uma encomenda sem remetente o leva ao bairro onde cresceu.",
+    "disponivel": true,
+    "diretor": "Miguel Figueira",
+    "pais": "Brasil",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "memória",
+      "criatividade"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão",
+      "perigo em aventuras"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-037",
+    "titulo": "A Porta do Apartamento 17",
+    "ano": 2011,
+    "generos": [
+      "suspense"
+    ],
+    "duracao_minutos": 107,
+    "idade_minima_sugerida": 14,
+    "climas": [
+      "tenso"
+    ],
+    "sinopse": "Uma moradora recebe encomendas destinadas a um apartamento inexistente. Ao investigar o prédio, encontra plantas com andares diferentes.",
+    "disponivel": true,
+    "diretor": "Sofia Alvarenga",
+    "pais": "Portugal",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "investigação",
+      "comunidade"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-038",
+    "titulo": "O Último Sinal da Torre",
+    "ano": 2012,
+    "generos": [
+      "suspense"
+    ],
+    "duracao_minutos": 115,
+    "idade_minima_sugerida": 16,
+    "climas": [
+      "tenso"
+    ],
+    "sinopse": "Um operador de rádio capta um pedido de ajuda de uma torre desativada. A gravação contém detalhes de acontecimentos que ainda não ocorreram.",
+    "disponivel": true,
+    "diretor": "Pedro Galvão",
+    "pais": "Argentina",
+    "idioma_original": "espanhol",
+    "audios": [
+      "espanhol",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "investigação",
+      "tempo"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão",
+      "temas adultos"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-039",
+    "titulo": "Estrada sem Retorno Marcado",
+    "ano": 2013,
+    "generos": [
+      "suspense"
+    ],
+    "duracao_minutos": 122,
+    "idade_minima_sugerida": 16,
+    "climas": [
+      "tenso"
+    ],
+    "sinopse": "Um casal segue uma rota sugerida por um mapa antigo. Ao tentar voltar, percebe que as placas apontam para destinos incompatíveis.",
+    "disponivel": true,
+    "diretor": "Elisa Marcondes",
+    "pais": "Canadá",
+    "idioma_original": "inglês",
+    "audios": [
+      "inglês",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "viagem",
+      "investigação"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão",
+      "temas adultos"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-040",
+    "titulo": "A Testemunha da Madrugada",
+    "ano": 2014,
+    "generos": [
+      "suspense"
+    ],
+    "duracao_minutos": 99,
+    "idade_minima_sugerida": 14,
+    "climas": [
+      "tenso"
+    ],
+    "sinopse": "Um padeiro vê uma movimentação estranha antes do amanhecer. Cada pessoa interrogada oferece uma explicação plausível e diferente.",
+    "disponivel": false,
+    "diretor": "André Veredas",
+    "pais": "França",
+    "idioma_original": "francês",
+    "audios": [
+      "francês"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "investigação",
+      "comunidade"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-041",
+    "titulo": "Quarto sem Número",
+    "ano": 2015,
+    "generos": [
+      "suspense"
+    ],
+    "duracao_minutos": 130,
+    "idade_minima_sugerida": 18,
+    "climas": [
+      "tenso"
+    ],
+    "sinopse": "Uma auditora encontra despesas associadas a um quarto ausente do cadastro de um hotel. A investigação ameaça expor um acordo mantido por décadas.",
+    "disponivel": true,
+    "diretor": "Marina Valença",
+    "pais": "Brasil",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "investigação",
+      "memória"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão",
+      "temas adultos"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-042",
+    "titulo": "O Som no Corredor Vazio",
+    "ano": 2016,
+    "generos": [
+      "suspense"
+    ],
+    "duracao_minutos": 104,
+    "idade_minima_sugerida": 16,
+    "climas": [
+      "tenso"
+    ],
+    "sinopse": "Um técnico de som trabalha em um teatro fechado. Durante as gravações, escuta passos que parecem responder aos seus movimentos.",
+    "disponivel": true,
+    "diretor": "Caio Fontoura",
+    "pais": "Portugal",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "música",
+      "investigação"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão",
+      "temas adultos"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-043",
+    "titulo": "O Enigma da Praça Redonda",
+    "ano": 2017,
+    "generos": [
+      "mistério"
+    ],
+    "duracao_minutos": 93,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "intrigante",
+      "leve"
+    ],
+    "sinopse": "Um banco de praça aparece em um lugar diferente a cada manhã. Uma turma organiza uma investigação durante as férias.",
+    "disponivel": true,
+    "diretor": "Helena Brum",
+    "pais": "Argentina",
+    "idioma_original": "espanhol",
+    "audios": [
+      "espanhol",
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "investigação",
+      "amizade"
+    ],
+    "avisos_conteudo": [],
+    "colecao": {
+      "nome": "Mistérios do Bairro",
+      "ordem": 1
+    }
+  },
+  {
+    "id": "FILME-044",
+    "titulo": "A Chave que Não Abria Portas",
+    "ano": 2018,
+    "generos": [
+      "mistério"
+    ],
+    "duracao_minutos": 105,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "intrigante"
+    ],
+    "sinopse": "Uma relojoeira herda uma chave sem fechadura. Marcas no metal indicam uma sequência de locais espalhados pela cidade.",
+    "disponivel": true,
+    "diretor": "Rafael Nogueira",
+    "pais": "Canadá",
+    "idioma_original": "inglês",
+    "audios": [
+      "inglês"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "investigação",
+      "memória"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-045",
+    "titulo": "Cinco Bilhetes e uma Mala",
+    "ano": 2019,
+    "generos": [
+      "mistério"
+    ],
+    "duracao_minutos": 111,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "intrigante"
+    ],
+    "sinopse": "Cinco passageiros recebem o mesmo bilhete de viagem. Uma mala esquecida parece ter sido preparada especialmente para o encontro.",
+    "disponivel": false,
+    "diretor": "Lia Monteverde",
+    "pais": "França",
+    "idioma_original": "francês",
+    "audios": [
+      "francês",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "viagem",
+      "investigação"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-046",
+    "titulo": "O Retrato sem Assinatura",
+    "ano": 2020,
+    "generos": [
+      "mistério"
+    ],
+    "duracao_minutos": 120,
+    "idade_minima_sugerida": 14,
+    "climas": [
+      "intrigante"
+    ],
+    "sinopse": "Um museu recebe uma pintura que ninguém reconhece. A conservadora encontra pistas sobre a autoria em objetos retratados ao fundo.",
+    "disponivel": true,
+    "diretor": "Bruno Alencastro",
+    "pais": "Brasil",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "investigação",
+      "criatividade"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-047",
+    "titulo": "A Sociedade dos Mapas Rasgados",
+    "ano": 2021,
+    "generos": [
+      "mistério",
+      "aventura"
+    ],
+    "duracao_minutos": 98,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "intrigante"
+    ],
+    "sinopse": "Amigos encontram pedaços de mapas dentro de livros usados. A montagem revela uma rota que termina no lugar onde começaram.",
+    "disponivel": true,
+    "diretor": "Teresa Vilar",
+    "pais": "Portugal",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "investigação",
+      "amizade"
+    ],
+    "avisos_conteudo": [
+      "perigo em aventuras"
+    ],
+    "colecao": {
+      "nome": "Mistérios do Bairro",
+      "ordem": 2
+    }
+  },
+  {
+    "id": "FILME-048",
+    "titulo": "A Receita Desaparecida",
+    "ano": 2022,
+    "generos": [
+      "mistério"
+    ],
+    "duracao_minutos": 86,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "intrigante",
+      "leve"
+    ],
+    "sinopse": "Uma receita some na véspera de uma festa comunitária. Duas crianças entrevistam os cozinheiros e descobrem um segredo afetuoso.",
+    "disponivel": true,
+    "diretor": "Davi Castanheira",
+    "pais": "Argentina",
+    "idioma_original": "espanhol",
+    "audios": [
+      "espanhol"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "família",
+      "investigação"
+    ],
+    "avisos_conteudo": [],
+    "colecao": {
+      "nome": "Mistérios do Bairro",
+      "ordem": 3
+    }
+  },
+  {
+    "id": "FILME-049",
+    "titulo": "Encontros na Linha Amarela",
+    "ano": 2023,
+    "generos": [
+      "romance"
+    ],
+    "duracao_minutos": 100,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "acolhedor"
+    ],
+    "sinopse": "Duas pessoas trocam recomendações de livros durante viagens de metrô. Uma mudança de horário interrompe os encontros antes que descubram seus nomes.",
+    "disponivel": true,
+    "diretor": "Nina Lacerda",
+    "pais": "Canadá",
+    "idioma_original": "inglês",
+    "audios": [
+      "inglês",
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "amor",
+      "viagem"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-050",
+    "titulo": "O Café das Quatro e Meia",
+    "ano": 2024,
+    "generos": [
+      "romance"
+    ],
+    "duracao_minutos": 108,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "acolhedor"
+    ],
+    "sinopse": "Uma ilustradora e um professor dividem a mesma mesa de café em dias alternados. Desenhos esquecidos iniciam uma conversa por recados.",
+    "disponivel": false,
+    "diretor": "Artur Saldanha",
+    "pais": "França",
+    "idioma_original": "francês",
+    "audios": [
+      "francês",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "amor",
+      "criatividade"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-051",
+    "titulo": "Uma Canção para Cada Estação",
+    "ano": 2025,
+    "generos": [
+      "romance"
+    ],
+    "duracao_minutos": 116,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "acolhedor"
+    ],
+    "sinopse": "Dois músicos se encontram em festivais ao longo de um ano. Entre viagens, compõem uma canção que nunca conseguem terminar juntos.",
+    "disponivel": true,
+    "diretor": "Clara Junqueira",
+    "pais": "Brasil",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "amor",
+      "música"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-052",
+    "titulo": "As Janelas da Rua do Sol",
+    "ano": 2000,
+    "generos": [
+      "romance"
+    ],
+    "duracao_minutos": 95,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "acolhedor"
+    ],
+    "sinopse": "Vizinhos de prédios opostos cuidam de plantas nas janelas. Uma tempestade aproxima suas rotinas e seus planos para o bairro.",
+    "disponivel": true,
+    "diretor": "Ícaro Avelar",
+    "pais": "Portugal",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "amor",
+      "natureza"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-053",
+    "titulo": "Cartões-Postais de Lugar Nenhum",
+    "ano": 2001,
+    "generos": [
+      "romance"
+    ],
+    "duracao_minutos": 123,
+    "idade_minima_sugerida": 14,
+    "climas": [
+      "acolhedor"
+    ],
+    "sinopse": "Uma tradutora recebe cartões de cidades inventadas. Ela procura o remetente e descobre um projeto literário compartilhado.",
+    "disponivel": true,
+    "diretor": "Beatriz Montenegro",
+    "pais": "Argentina",
+    "idioma_original": "espanhol",
+    "audios": [
+      "espanhol",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "amor",
+      "criatividade"
+    ],
+    "avisos_conteudo": [
+      "cenas de tensão"
+    ],
+    "colecao": null
+  },
+  {
+    "id": "FILME-054",
+    "titulo": "A Livraria Depois das Oito",
+    "ano": 2002,
+    "generos": [
+      "romance"
+    ],
+    "duracao_minutos": 103,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "acolhedor"
+    ],
+    "sinopse": "Dois funcionários organizam eventos noturnos para salvar uma livraria. A escolha dos livros expõe diferenças que aproximam suas histórias.",
+    "disponivel": true,
+    "diretor": "Tomás Serpa",
+    "pais": "Canadá",
+    "idioma_original": "inglês",
+    "audios": [
+      "inglês",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "amor",
+      "comunidade"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-055",
+    "titulo": "Vozes da Vila das Pontes",
+    "ano": 2003,
+    "generos": [
+      "documentário fictício"
+    ],
+    "duracao_minutos": 84,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "reflexivo"
+    ],
+    "sinopse": "Neste documentário ficcional, moradores de uma vila inventada narram a construção de suas pontes. As entrevistas encenadas exploram memória e cooperação.",
+    "disponivel": false,
+    "diretor": "Luana Vidal",
+    "pais": "França",
+    "idioma_original": "francês",
+    "audios": [
+      "francês",
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "comunidade",
+      "memória"
+    ],
+    "avisos_conteudo": [],
+    "colecao": {
+      "nome": "Memórias Compartilhadas",
+      "ordem": 1
+    }
+  },
+  {
+    "id": "FILME-056",
+    "titulo": "O Tempo dos Artesãos",
+    "ano": 2004,
+    "generos": [
+      "documentário fictício"
+    ],
+    "duracao_minutos": 91,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "reflexivo"
+    ],
+    "sinopse": "A obra acompanha artesãos fictícios em um bairro imaginário. Seus processos encenados propõem uma reflexão sobre pressa e aprendizado.",
+    "disponivel": true,
+    "diretor": "Miguel Figueira",
+    "pais": "Brasil",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "criatividade",
+      "aprendizado"
+    ],
+    "avisos_conteudo": [],
+    "colecao": {
+      "nome": "Memórias Compartilhadas",
+      "ordem": 2
+    }
+  },
+  {
+    "id": "FILME-057",
+    "titulo": "Retrato de um Rio Imaginário",
+    "ano": 2005,
+    "generos": [
+      "documentário fictício"
+    ],
+    "duracao_minutos": 101,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "reflexivo"
+    ],
+    "sinopse": "Pesquisadores fictícios percorrem um rio que existe apenas nesta narrativa. O percurso discute como comunidades descrevem o lugar onde vivem.",
+    "disponivel": true,
+    "diretor": "Sofia Alvarenga",
+    "pais": "Portugal",
+    "idioma_original": "português",
+    "audios": [
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "natureza",
+      "comunidade"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-058",
+    "titulo": "Uma Escola entre Montanhas",
+    "ano": 2006,
+    "generos": [
+      "documentário fictício"
+    ],
+    "duracao_minutos": 96,
+    "idade_minima_sugerida": 0,
+    "climas": [
+      "reflexivo"
+    ],
+    "sinopse": "Professores e estudantes interpretam personagens de uma escola inventada. A rotina encenada explora caminhos diferentes para aprender em grupo.",
+    "disponivel": true,
+    "diretor": "Pedro Galvão",
+    "pais": "Argentina",
+    "idioma_original": "espanhol",
+    "audios": [
+      "espanhol",
+      "português"
+    ],
+    "legendas": [
+      "português",
+      "inglês"
+    ],
+    "temas": [
+      "aprendizado",
+      "comunidade"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-059",
+    "titulo": "Os Colecionadores de Horizontes",
+    "ano": 2007,
+    "generos": [
+      "documentário fictício"
+    ],
+    "duracao_minutos": 110,
+    "idade_minima_sugerida": 10,
+    "climas": [
+      "reflexivo"
+    ],
+    "sinopse": "Viajantes fictícios reúnem desenhos de paisagens imaginárias. Seus relatos encenados investigam o significado de distância e pertencimento.",
+    "disponivel": true,
+    "diretor": "Elisa Marcondes",
+    "pais": "Canadá",
+    "idioma_original": "inglês",
+    "audios": [
+      "inglês",
+      "português"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "viagem",
+      "memória"
+    ],
+    "avisos_conteudo": [],
+    "colecao": null
+  },
+  {
+    "id": "FILME-060",
+    "titulo": "A Cidade que Aprendeu a Escutar",
+    "ano": 2008,
+    "generos": [
+      "documentário fictício"
+    ],
+    "duracao_minutos": 118,
+    "idade_minima_sugerida": 12,
+    "climas": [
+      "reflexivo"
+    ],
+    "sinopse": "Uma cidade inventada promove encontros sobre seus sons cotidianos. Entrevistas ficcionais mostram como o espaço muda quando os moradores prestam atenção.",
+    "disponivel": false,
+    "diretor": "André Veredas",
+    "pais": "França",
+    "idioma_original": "francês",
+    "audios": [
+      "francês"
+    ],
+    "legendas": [
+      "português"
+    ],
+    "temas": [
+      "música",
+      "comunidade"
+    ],
+    "avisos_conteudo": [],
+    "colecao": {
+      "nome": "Memórias Compartilhadas",
+      "ordem": 3
+    }
+  }
+]
